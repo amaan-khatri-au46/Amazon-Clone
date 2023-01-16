@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./loginSignUp.css">
+</head>
+<style>
+  .img{
+    height: 100px;
+  }
+</style>
+<body>
+    <form action="/users/logIn" method="POST">
+        <div class="amazon-login">
+            <img
+              class="amazon-logo"
+              src="https://indianapublicmedia.org/images/news-images/amazon-logo.jpg"
+              alt="logo"
+            />
+            <div class="login-area">
+              <h1>login</h1>
+      
+              <form>
+                <h5>Email</h5>
+                <input type="text" name="email" />
+      
+                <h5>Password</h5>
+                <input type="password" name="password" />
+      
+                <button class="amazon-submitButton">login</button>
+              </form>
+            </div>
+          </div>
+    </form>
+</body>
+</html>

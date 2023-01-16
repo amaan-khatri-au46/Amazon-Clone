@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .amazon-login{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.amazon-logo{
+    margin-bottom: 30px;
+    /* object-fit: contain; */
+    width: 160px;
+    height: 100px;
+
+}
+
+
+.login-area{
+    width: 400px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;   
+    margin-top: 40%px;
+}
+
+h1 {
+    font-weight: 20px;
+    font-size: 40px;
+    margin-bottom: 5px;
+
+}
+
+ h5 {
+margin-bottom: 5px;
+font-size: 20px;
+}
+
+ input {
+    height: 30px;
+    background-color: white;
+    width: 98%;
+    border-radius: 5px;
+}
+
+.login-area > p {
+
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.amazon-submitButton {
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    background: #f0c14b;
+    margin-top: 10px;
+    border-radius: 2px;
+    border: 1px solid ;
+    border-color: #a88734 #9c7e31 #846a29;
+    border-radius: 8px;
+}
+</style>
+<body>
+    <form action="/products" method="POST" enctype="multipart/form-data">
+    <div class="amazon-login">
+        <div class="login-area">
+            <img
+            class="amazon-logo"
+            src="https://indianapublicmedia.org/images/news-images/amazon-logo.jpg"
+            alt="logo"
+          />
+  
+
+          <h1>Admin  Add-Product</h1>
+
+          <form>
+            
+            <h5>Name</h5>
+            <input type="text" name="name"  required placeholder="Enter Product Name"/>
+
+            <h5> Category</h5>
+            <input type="text" name="category"  required placeholder="Enter Product Category"/>
+
+            <h5> Price</h5>
+            <input type="number" name="price" required placeholder="Enter Product Price">
+
+            <h5>Brand</h5>
+            <input type="text" name="brand" required placeholder="Enter Product Brand">
+
+            <h5>Rating</h5>
+            <input type="text" name="rating" required placeholder="Enter Product Rating">
+
+            <h5> Image</h5>
+            <input  type="file" name="productImage"  required  />
+
+            <button type="submit" class="amazon-submitButton">Add Product</button>
+            
+        </form>
+</body>
+</html>
